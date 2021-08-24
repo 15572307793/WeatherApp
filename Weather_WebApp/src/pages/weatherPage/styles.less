@@ -1,0 +1,83 @@
+
+.weather_main{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+
+    width: 100%;
+    height: 100vh;
+
+    background: url("../../assets/background.jpg")no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    -moz-background-size: cover
+}
+.shift{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.centre_body_box{
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: aliceblue;
+}
+.city_name{
+    position: absolute;
+    // text-align: center;
+    // top:8%;
+margin-bottom: 64vh;
+    font-size: 5rem;
+    font-weight: 600;
+}
+.weather_box{
+    font-size: 2rem;
+    margin-top: 10vh;
+    width: 50vw;
+
+    .weather_icon{
+        display: flex;
+        justify-content: center;
+        margin: 3vh 0;
+    }
+    >div{
+        text-align: center;
+    }
+    .weatherRange{
+        span{
+            margin: 0 14%;
+        }
+        margin: 3vh 0 4vh;
+    }
+    .weather_state{
+        font-size: 2.5rem;
+        letter-spacing:4px
+    }
+}
+//  @media screen and (max-width:1200px) {
+//     .city_name{
+//         margin-bottom: 8%;
+//     } 
+//  }
+// @media screen and (min-width:1440px) {
+//     .city_name{
+//         top:11%
+//     } 
+//  }
+// @media screen and (min-width:1800px) {
+//     .city_name{
+//         top:15%
+//     } 
+//  }
+.no_data{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    font-size: 4rem;
+
+    text-align: center;
+    top: 40%;
+}
