@@ -1,10 +1,11 @@
 /*
  * @Autor: Jiang
- * @Date: 2021-06-28 19:57:17
+ * @Date: 2021-08-23 17:16:19
  * @LastAutor: you name
- * @LastEditTime: 2021-08-23 17:16:19
+ * @LastEditTime: 2021-08-26 11:20:53
  * @FilePath: /Weather_Server/utils/sequelize.js
  */
+
 const Sequelize = require("sequelize");
 ////创建文件绝对地址
 

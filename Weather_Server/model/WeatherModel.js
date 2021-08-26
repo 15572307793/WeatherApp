@@ -1,8 +1,8 @@
 /*
  * @Autor: Jiang
- * @Date: 2021-06-28 20:06:50
+ * @Date: 2021-08-23 20:34:31
  * @LastAutor: you name
- * @LastEditTime: 2021-08-23 20:34:31
+ * @LastEditTime: 2021-08-26 11:20:16
  * @FilePath: /Weather_Server/model/WeatherModel.js
  */
 const { Model, Sequelize, DataTypes } = require("sequelize");

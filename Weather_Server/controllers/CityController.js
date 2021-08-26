@@ -1,9 +1,9 @@
 /*
  * @Autor: Jiang
- * @Date: 2021-06-28 19:03:51
+ * @Date: 2021-08-24 23:11:14
  * @LastAutor: you name
- * @LastEditTime: 2021-08-23 23:11:14
- * @FilePath: /Weather_Server/controllers/cityController.js
+ * @LastEditTime: 2021-08-25 11:19:54
+ * @FilePath: /Weather_Server/controllers/CityController.js
  */
 const CityOperation = require("../operation/CityOperation");
 ///获取所有城市

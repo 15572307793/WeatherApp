@@ -1,10 +1,3 @@
-/*
- * @Autor: Jiang
- * @Date: 2021-06-28 20:05:59
- * @LastAutor: you name
- * @LastEditTime: 2021-08-24 20:59:04
- * @FilePath: /Weather_Server/model/CityModel.js
- */
 const { Sequelize, DataTypes, Model, BOOLEAN } = require("sequelize");
 const sequelize = require("../utils/sequelize");
 const WeatherModel = require("./WeatherModel");
