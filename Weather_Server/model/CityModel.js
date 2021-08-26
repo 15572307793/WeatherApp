@@ -2,7 +2,7 @@
  * @Autor: Jiang
  * @Date: 2021-06-28 20:05:59
  * @LastAutor: you name
- * @LastEditTime: 2021-08-24 10:14:53
+ * @LastEditTime: 2021-08-24 20:59:04
  * @FilePath: /Weather_Server/model/CityModel.js
  */
 const { Sequelize, DataTypes, Model, BOOLEAN } = require("sequelize");
@@ -110,16 +110,19 @@ WeatherModel.sync()
     });
     console.log("WeatherModel表初始数据插入完成==>>>");
   })
-  .catch((e) => console.log(`WeatherModel表建立失败==>>>`, e)); ////可以用sequelize.sync()   //给的值若是{ force: true }会直接重建新表
-CityModel.sync()
   .then(() => {
-    console.log("CityModel表建立完成==>>>");
-    weathData.forEach((element, index) => {
-      element.weatherModelId = index + 1;
-      CityModel.create(element);
-    });
-    console.log("CityModel表初始数据插入完成==>>>");
+    // console.log(`object`, object)
+    CityModel.sync()
+      .then(() => {
+        console.log("CityModel表建立完成==>>>");
+        weathData.forEach((element, index) => {
+          element.weatherModelId = index + 1;
+          CityModel.create(element);
+        });
+        console.log("CityModel表初始数据插入完成==>>>");
+      })
+      .catch((e) => console.log(`CityModel表建立失败==>>>`, e));
   })
-  .catch((e) => console.log(`CityModel表建立失败==>>>`, e));
+  .catch((e) => console.log(`WeatherModel表建立失败==>>>`, e)); ////可以用sequelize.sync()   //给的值若是{ force: true }会直接重建新表
 
 module.exports = CityModel;
